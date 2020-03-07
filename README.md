@@ -1,21 +1,20 @@
 # System-Design-Preperation
-
 ## References
 - https://www.educative.io/courses/grokking-the-system-design-interview
 - https://github.com/lei-hsia/grokking-system-design
-
-
-
-
+<br>
+<br>
+<br>
+<br>
 # Preview
-1. Scope the problem
+## Scope the problem
 - Steps
   - Requirements clarifications
   - System interface definition
 - Ask clarifying questions to understand the constraints and use cases
 - Don't make assumptions
-
-2. Sketch up an abstraction design
+  
+## Sketch up an abstraction design
 - Steps
   - Back-of-the-envelope estimation
   - Defining data model
@@ -23,7 +22,7 @@
 - Building blocks of the system
 - Relationship between them
 
-3. Identify and address the bottlenecks
+## Identify and address the bottlenecks
 - Steps
   - Detailed design
   - Identifying and resolving bottlenecks
