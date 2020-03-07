@@ -3,6 +3,7 @@
 - https://www.educative.io/courses/grokking-the-system-design-interview
 - https://github.com/lei-hsia/grokking-system-design
 <br><br><br><br>
+
 # Preview
 ## Scope the problem
 - Steps
@@ -24,15 +25,14 @@
   - Detailed design
   - Identifying and resolving bottlenecks
 - Use the fundamental principles of scalable system design
-
-
-
+<br><br><br><br>
 
 # Distrbuted System Design Basics
 
 ## Key Characterics
 
 ### Scalability
+- ex) Scalable system for more user
 - The capability of a system to grow and manage increased demand.
 - Scalable system is which can continuously evolve to support growing
 - Horizontal / Vertical scaling
@@ -40,12 +40,22 @@
   - Vertical Scaling: by adding more resource (CPU, RAM, storage, etc) to an existing server. (downtime and an upper limit)
 
 ### Reliability
+ex) Reliable system even if server downs
+- Reliability is the probability that a system will fail in a given period
+- A distributed system is reliable if it keeps delivering its service even when one or multiple components fail
+- Reliability is achieved through redundancy of components and data (remove every singple point of failure)
 
 ### Availability
+ex) Available system whenever user request
+- Availability is the time a system remains operational to perform its required function in a specific period.
+- Measured by the percentage of time that a system remians operational under normal condtions.
+- Reliable system is available. But not vice-versa. It can be security hole.
 
 ### Efficiency
-
-
+ex) Fast response
+- Latency: response time, the delay to obtain the first piece of data.
+- Bandwidth: throughput, amount of data delivered in a given time.
+<br><br><br>
 
 ## Load Balancer / Load Balancing (LB)
 Help Scale Horizaontally across an ever-increasing number of servers.
@@ -66,7 +76,21 @@ Help Scale Horizaontally across an ever-increasing number of servers.
 - Smart clients
 - Hardware load balancers
 - Software load balancers
+<br><br><br>
 
+## Caching
+Take advantage of the locality of reference principle
+- recently requested data is likely to be requested again.
+Exist at all levels in architecture, but often found at the level nearest to the front end.
 
+### Application server cache
 
-##
+### Distributed cache
+
+### Global Cache
+
+### Content distributed network (CDN)
+
+### Cache invalidation
+
+### Cache eviction policies
