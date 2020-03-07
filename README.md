@@ -2,10 +2,7 @@
 ## References
 - https://www.educative.io/courses/grokking-the-system-design-interview
 - https://github.com/lei-hsia/grokking-system-design
-<br>
-<br>
-<br>
-<br>
+
 # Preview
 ## Scope the problem
 - Steps
@@ -39,10 +36,8 @@
 - The capability of a system to grow and manage increased demand.
 - Scalable system is which can continuously evolve to support growing
 - Horizontal / Vertical scaling
-  - Horizontal Scaling
-    - by adding more servers into the pool of resources 
-  - Vertical Scaling
-    - by adding more resource (CPU, RAM, storage, etc) to an existing server. (downtime and an upper limit)
+  - Horizontal Scaling: by adding more servers into the pool of resources 
+  - Vertical Scaling: by adding more resource (CPU, RAM, storage, etc) to an existing server. (downtime and an upper limit)
 
 ### Reliability
 
