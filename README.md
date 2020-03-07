@@ -84,8 +84,18 @@ Take advantage of the locality of reference principle
 Exist at all levels in architecture, but often found at the level nearest to the front end.
 
 ### Application server cache
+- Cache placed on a request layer node
+- When a request layer node is expanded to many nodes
+  - Problem
+    - LB randomly distrbutes requests across the nodes
+    - The same request can go to diffrent nodes
+    - Incrase cache misses
+  - Solution
+    - Global caches
+    - Distrbuted caches
 
 ### Distributed cache
+
 
 ### Global Cache
 
