@@ -4,6 +4,9 @@
 - https://github.com/lei-hsia/grokking-system-design
 <br><br><br><br>
 
+
+
+
 # Preview
 ## Scope the problem
 - Steps
@@ -26,6 +29,9 @@
   - Identifying and resolving bottlenecks
 - Use the fundamental principles of scalable system design
 <br><br><br><br>
+
+
+
 
 # Distrbuted System Design Basics
 
@@ -57,6 +63,8 @@ ex) Fast response
 - Bandwidth: throughput, amount of data delivered in a given time.
 <br><br><br>
 
+
+
 ## Load Balancer / Load Balancing (LB)
 Help Scale Horizaontally across an ever-increasing number of servers.
 
@@ -77,6 +85,8 @@ Help Scale Horizaontally across an ever-increasing number of servers.
 - Hardware load balancers
 - Software load balancers
 <br><br><br>
+
+
 
 ## Caching
 Take advantage of the locality of reference principle
@@ -152,5 +162,45 @@ Exist at all levels in architecture, but often found at the level nearest to the
 - LFU: least frequently used
 - RR: random replacement
 <br><br><br>
+
+
+
+## Sharding & Data Partitioning
+
+### Partitioning methods
+- Horizontal partitioning
+  - Range based sharing
+
+- Vertical partitioning
+  - Divide data for a specific feature to their own server
+
+- Directory-based partitioning
+  - A lookup service that knows the partitioning scheme and abstracts it away from the database access code.
+
+### Partitioning criteria
+- Key or hash-based partitioning
+  - Apply a hash function to some key attribute of the entry to get the partition number
+  
+- List partitioining
+  - Each partition is assigned a list of values
+
+- Round-robin partitioning
+  - With n partitions, the i tuple is assigned to partition i % n
+
+- Composite partitioning
+  - Combine any of above partitioning schemes to devise a new scheme.
+  - Consistent hashing is a composite of hash and list partitioning.
+    - Key -> reduced key space through hash -> list -> partition.
+
+### Common problmes of sharding
+Most of the constraints are due to the fact that operations across multiple tables or mlultiple rows in the same table will no longer run on the same server.
+- Joins and denormalization
+- Referential integrity
+- Rebalancing
+<br><br><br>
+
+
+
+
 
 
