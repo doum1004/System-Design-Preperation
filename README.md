@@ -201,6 +201,86 @@ Most of the constraints are due to the fact that operations across multiple tabl
 
 
 
+## Indexes
+- Improve the performance of search queries
+- Decrease the write performance. This performance degradation appiles to all insert, update, and delete operations.
+<br><br><br>
 
 
 
+## Proxies
+A proxy server is an intermediary piece of hardware/software sitting between client and backend server
+- Filter requests
+- Log requests
+- Transform requests (encryption, compression, etc)
+- Cache
+- Batch requests
+  - Collapsed forwarding: enable multiple client requests for the same URI to be processed as one request to the backend server
+  - Collpase requests for data that is spatially close together in the storage to minimize the reads
+<br><br><br>
+
+
+
+## Queues
+Queues are used to effectively manage requests in a large-scale distributed sysetm, in which diffrent components of the system may need to work in an asynchronous way
+- It is an abstraction between the client's request and the actual work performed to service it.
+- Queues are implemente on the asynchronious comunication protocol. When a client submits a task to a queue they are no longer required to wait for the results
+- Queue can provide protection from service outages and failures
+<br><br><br>
+
+
+
+## Redundancy
+duplication of critical data or services withthe intension of increased reliability of the system
+<br><br><br>
+
+
+## SQL vs. NoSQL
+
+### NoSQL
+
+#### Key-Value stores
+- Redis, Vodemort, Dynamo
+
+#### Document databases
+- MongoDB, MongoDB
+
+#### Wide-column / columnar databases
+- Cassandra, HBase
+
+#### Graph database
+- Neo4J, InfiniteGraph
+
+### Diffrent between SQL and NoSQL
+#### Storage
+#### Schema
+#### Querying
+#### Scalability
+#### ACID
+- Atomicity, consistency, isolation, durability
+
+### Which one to use?
+
+#### SQL
+- Ensure ACID compliance
+- Data is structured and unchanging
+
+#### NoSQL
+- Data has little or no structure.
+- Make the most of cloud computing and storage
+- Rapid development
+<br><br><br>
+
+
+
+## CAP Theorem
+<br><br><br>
+
+## Consistent Hashing
+<br><br><br>
+
+## Client Server Communication
+<br><br><br><br>
+
+
+# Sysetm Designs Examples
