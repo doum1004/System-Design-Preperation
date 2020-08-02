@@ -1,8 +1,44 @@
 # System-Design-Preperation
 ## References
 - https://www.educative.io/courses/grokking-the-system-design-interview
+- https://gist.github.com/vasanthk/485d1c25737e8e72759f
 - https://github.com/lei-hsia/grokking-system-design
 <br><br><br><br>
+
+# System Design Cheatsheet
+> Picking the right architecture = right battles + managing trade-offs
+
+## basic steps
+1. Clarify and agree on the scope of the system
+- User cases
+  - Who is going to use?
+  - How are they going to use?
+- Constrains
+  - Identify traffic and data handling constraints at scale
+  - Scale of the system. Such as requests per second, requests types, data written per second, data read per second
+  - Special system requirements. Such as multi-threading, read or write oriented
+2. High level architecture design (Abstract design)
+- Sketch the importatnt components and connections between. (No details)
+  - Application service layer (serves the requests) (Load balancer)
+  - List diffrent services (service partition)
+  - Data storage layer (master/slave db cluster)
+  - Cacheing System
+3. Component Design
+- Component + Specific APIs required
+- Object Oriented Design for functionalities
+  - Map features to modeuls: One scenario for one module
+  - Consider the relationships among modules
+    - Cerntain functions must have unique instance (singletons)
+    - Core object can be made up of many other objects (compositions)
+    - One object is another object )inheritance)
+- Database schema design.
+4. Understanding Bottlenecks
+- a load balancer or other to handle user requests? downside?
+- Distribute database on multiple machines for large data? downside?
+- Mem cahcing for database performance? downside?
+
+
+
 
 
 
